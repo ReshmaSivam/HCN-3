@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Challenge - 6 </title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+
+        const plus = document.querySelectorAll(".plus");
+        const minus = document.querySelectorAll(".minus");
+        const hidden = document.querySelectorAll(".hidden");
+        const a1 = document.querySelectorAll(".a1");
+
+        for (let i=0; i < plus.length; i++){
+            plus[i].addEventListener("click", function() {
+                plus[i].classList.toggle("hidden");
+                minus[i].classList.toggle("hidden");
+                a1[i].classList.toggle("hidden");
+            });
+        }
+
+        for (let i=0; i < minus.length; i++){
+            plus[i].addEventListener("click", function(){
+                plus[i].classList.toggle("hidden");
+                minus[i].classList.toggle("hidden");
+                a1[i].classList.toggle("hidden");
+            });
+        }
+
+    </script>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="faq">
+            <img src="icon-star.svg" class="star" alt=""/>
+            <h2> FAQs</h2>
+        </div>
+
+        <div class="content">
+
+            <div>
+                <div class="q-1">
+                    <h5> What is Front-end Mentor, and how will it help me ? </h5>
+    
+                    <img src="icon-plus.svg" alt="" class="plus"/>
+                    <img src="icon-minus.svg" alt="" class="minus hidden"/>
+                </div>
+
+                <div class="a1 hidden">
+                    <p> Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with 
+                        projects in HTML, CSS and JavaScript. It's suitable for all levels and ideal for portfolio building. 
+                    </p>
+                </div>
+            </div>
+
+            <hr/>
+
+            <div>
+                <div class="q-1">
+                    <h5> Is Frontend Mentor free ? </h5>
+    
+                    <img src="icon-plus.svg" alt="" class="plus"/>
+                    <img src="icon-minus.svg" alt="" class="minus hidden"/>
+                </div>
+                <div class="a1 hidden">
+                   <p>  Yes!, Frontend mentor is completely free for all the Developers/Users/Students. </p>
+                </div>
+            </div>
+
+            <hr/>
+
+            <div>
+                <div class="q-1">
+                    <h5> Can I use Frontend Mentor projects in my portfolio ? </h5>
+    
+                    <img src="icon-plus.svg" alt="" class="plus"/>
+                    <img src="icon-minus.svg" alt="" class="minus hidden"/>
+                </div>
+                <div class="a1 hidden">
+                    <p> Yes!, Absolutely you can use the projects that you developed in Frontend Mentor in your Portfolio. </p>
+                </div>
+    
+            </div>
+
+            <hr/>
+
+            <div>
+                <div class="q-1">
+                    <h5> How can I get help if I'm stuck on a challenge ? </h5>
+    
+                    <img src="icon-plus.svg" alt="" class="plus"/>
+                    <img src="icon-minus.svg" alt="" class="minus hidden"/>
+                </div>
+                <div class="a1 hidden">
+                   <p> You don't have to worry about errors or doubts. 
+                    Join Our Frontend Mentor Community in where you can get a help from your co-developers/users. </p>
+                </div>
+    
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
